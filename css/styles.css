@@ -111,12 +111,22 @@ body {
 }
 
 #hero-title {
-    /* font-size: var(--font-header); */
     font-size: 8vw;
+    line-height: 80%;
     text-transform: uppercase;
-    letter-spacing: 2.2px;
+    letter-spacing: 7px;
+    /* letter-spacing: 2.2px; */
     font-weight: 700;
     text-align: center;
+}
+
+#hero-description {
+    font-size: var(--font-skills);
+    /* text-transform: uppercase; */
+    letter-spacing: 2.3px;
+    font-weight: 500;
+    text-align: center;
+
 }
 
 .expertise {
@@ -223,4 +233,17 @@ body {
     font-weight: 500;
     width: 150px;
     padding: 5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin-top: 6rem;
+}
+
+.contact-form {
+    border: 1px solid black;
+    width: 500px;
 }
