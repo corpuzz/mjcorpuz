@@ -7,34 +7,33 @@
   <title>mjcorpuz.dev</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
   <header class="header">
     <div id="branding" class="header-btn">
-      <img id="logo" src="https://www.minecraft.net/content/dam/games/minecraft/game-characters/MC-About_Key-Art_Gather_Resources_600x800.png" alt="">
+      <img id="logo" src="https://placehold.co/400" alt="">
       <p>mjcorpuz</p>
     </div>
 
     <nav class="nav-links-header">
       <ul class="nav-links">
-        <li><a href="#">Home</li>
-        <li><a href="#">Expertise</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <button id="dashboard-btn" class="header-btn">Dashboard</button>
   </header>
 
 
-    <section class="home">
+    <section id="home" class="home">
       <div>
         <p id="hero-title">mjcorpuz</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
     </section>
-    <section class="expertise">
+    <section id="expertise" class="expertise">
       <h1 class="title">My Skills and Expertise</h1>
       <div class="skills-grid">
         <div class="skills-block">
@@ -57,11 +56,11 @@
 
       </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <h1 class="title">My Projects</h1>
       <div class="projects-grid">
         <div class="projects-block">
-          <img class="projects-img" src="" alt="">
+          <img class="projects-img" src="https://placehold.co/600x400" alt="">
           <p class="projects-title">Javascript</p>
           <p class="projects-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
@@ -73,7 +72,7 @@
         </div>
 
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <form action="/submit-form" method="POST">
         <!-- Name Field -->
         <label for="name">Name:</label>
