@@ -7,6 +7,7 @@
   <title>mjcorpuz.dev</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
   <header class="header">
@@ -27,72 +28,82 @@
   </header>
 
 
-    <section id="home" class="home">
-      <div>
-        <p id="hero-title">mjcorpuz</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <section id="home" class="home">
+    <div>
+      <p id="hero-title">mjcorpuz</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </section>
+  <section id="expertise" class="expertise">
+    <h1 class="title">My Skills and Expertise</h1>
+    <div class="skills-grid">
+      <div class="skills-block">
+        <img class="skills-img" src="https://placehold.co/400" alt="">
+        <p class="skills-title">Javascript</p>
+        <p class="skills-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
       </div>
-    </section>
-    <section id="expertise" class="expertise">
-      <h1 class="title">My Skills and Expertise</h1>
-      <div class="skills-grid">
-        <div class="skills-block">
-          <img class="skills-img" src="https://placehold.co/400" alt="">
-          <p class="skills-title">Javascript</p>
-          <p class="skills-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
 
-        <div class="skills-block">
-          <img class="skills-img" src="https://placehold.co/400" alt="">
-          <p class="skills-title">Vue.js</p>
-          <p class="skills-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="skills-block">
-          <img class="skills-img" src="https://placehold.co/400" alt="">
-          <p class="skills-title">PHP</p>
-          <p class="skills-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-
+      <div class="skills-block">
+        <img class="skills-img" src="https://placehold.co/400" alt="">
+        <p class="skills-title">Vue.js</p>
+        <p class="skills-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
       </div>
-    </section>
-    <section id="projects" class="projects">
-      <h1 class="title">My Projects</h1>
+
+      <div class="skills-block">
+        <img class="skills-img" src="https://placehold.co/400" alt="">
+        <p class="skills-title">PHP</p>
+        <p class="skills-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+      <!-- <div class="skills-block">
+          <img class="skills-img" src="https://placehold.co/400" alt="">
+          <p class="skills-title">php</p>
+          <p class="skills-description">lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div> -->
+
+    </div>
+  </section>
+  <section id="projects" class="projects">
+    <h1 class="title">My Projects</h1>
+    <div class="projects-container">
       <div class="projects-grid">
-        <div class="projects-block">
-          <img class="projects-img" src="https://placehold.co/600x400" alt="">
+        <img class="projects-img" src="https://placehold.co/600x400" alt="">
+        <div class="projects-right-block">
           <p class="projects-title">Javascript</p>
-          <p class="projects-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <p class="projects-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <button class="projects-btn">View project</button>
         </div>
+      </div>
 
-        <div class="projects-block">
-          <img class="projects-img" src="" alt="">
-          <p class="projects-title">Vue.js</p>
-          <p class="projects-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div class="projects-grid">
+        <img class="projects-img" src="https://placehold.co/600x400" alt="">
+        <div class="projects-right-block">
+          <p class="projects-title">Javascript</p>
+          <p class="projects-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <button class="projects-btn">View project</button>
         </div>
+      </div>
+  </section>
+  <section id="contact" class="contact">
+    <form action="/submit-form" method="POST">
+      <!-- Name Field -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Your Name">
+      <br><br>
 
-    </section>
-    <section id="contact" class="contact">
-      <form action="/submit-form" method="POST">
-        <!-- Name Field -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Your Name">
-        <br><br>
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+      <br><br>
 
-        <!-- Email Field -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com">
-        <br><br>
+      <!-- Message Field -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required rows="5" cols="33" placeholder="Your Message"></textarea>
+      <br><br>
 
-        <!-- Message Field -->
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required rows="5" cols="33" placeholder="Your Message"></textarea>
-        <br><br>
-
-        <!-- Submit Button -->
-        <button type="submit">Send</button>
-      </form>
-    </section>
+      <!-- Submit Button -->
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
 </body>
 
