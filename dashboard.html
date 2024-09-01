@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Dashboard</h1>
+
+        <section class="card">
+            <h2>HOME</h2>
+            <form>
+                <label for="brand-name">Edit brand name:</label>
+                <input type="text" id="brand-name" name="brand-name">
+
+                <label for="brand-description">Edit brand description:</label>
+                <input type="text" id="brand-description" name="brand-description">
+
+                <label for="background-image">Edit background image:</label>
+                <button type="button" class="choose-file">Choose from file</button>
+                <span>or</span>
+                <input type="url" id="background-image" name="background-image" placeholder="Enter URL">
+                
+                <div class="buttons">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Save changes</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Contact</h2>
+            <form>
+                <label for="heading-title">Edit heading title:</label>
+                <input type="text" id="heading-title" name="heading-title">
+
+                <label for="heading-description">Edit heading description:</label>
+                <input type="text" id="heading-description" name="heading-description">
+
+                <label for="phone-number">Edit phone number:</label>
+                <input type="tel" id="phone-number" name="phone-number">
+
+                <label for="email">Edit email:</label>
+                <input type="email" id="email" name="email">
+
+                <div class="buttons">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Save changes</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Skills and Expertise</h2>
+            <form>
+                <label for="skill-title">Add a skill/expertise:</label>
+                <input type="text" id="skill-title" name="skill-title">
+
+                <label for="skill-description">Description:</label>
+                <textarea id="skill-description" name="skill-description"></textarea>
+
+                <label for="skill-image-url">Image URL:</label>
+                <input type="url" id="skill-image-url" name="skill-image-url">
+
+                <div class="buttons">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Save changes</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Projects</h2>
+            <form>
+                <label for="project-title">Add a project:</label>
+                <input type="text" id="project-title" name="project-title">
+
+                <label for="project-description">Description:</label>
+                <textarea id="project-description" name="project-description"></textarea>
+
+                <label for="project-image-url">Image URL:</label>
+                <input type="url" id="project-image-url" name="project-image-url">
+
+                <div class="buttons">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Save changes</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
