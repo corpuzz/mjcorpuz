@@ -196,9 +196,9 @@ body {
 .projects-grid {
     border: 1px solid black;
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Two columns: image and content */
-    gap: 20px; /* Space between columns */
-    align-items: center; /* Aligns items at the start of each row */
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+    align-items: center; 
     max-width: 800px;
     /* margin: 0 auto; */
     padding: 2rem;
@@ -247,8 +247,18 @@ body {
     border: 1px solid black;
     width: 500px;
 }
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+}
+
+
  
-/* DASHBOARD */
+/******** DASHBOARD ***************/
+
 .dashboard {
     max-width: 900px;
     margin: 20px auto;
