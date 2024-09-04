@@ -4,7 +4,7 @@ document.getElementById('dashboard-btn').onclick = () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     function fetchUpdates() {
-        fetch('update_check.php')
+        fetch('../mjcorpuz/php/update_check.php')
             .then(response => response.json())
             .then(data => {
                 // Update Home Section
