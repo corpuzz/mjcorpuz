@@ -240,13 +240,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 6rem;
 }
 
 .contact-form {
-    border: 1px solid black;
-    width: 500px;
+    /* border: 1px solid black;
+    width: 500px; */
 }
 
 footer {
@@ -346,4 +346,172 @@ textarea {
 .buttons button[type="submit"] {
     background-color: #007bff;
     color: white;
+}
+
+/* CONTACT */
+.container {
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px; 
+    flex-direction: row;
+    margin-bottom: 1in;
+}
+
+.contact-info {
+    padding: 40px;
+    background-color: #f4f4f4;
+    width: 40%;
+}
+
+.contact-info.projects-description  {
+    margin-bottom: 1rem;
+    /* font-size: 14px; */
+    /* line-height: 1.5; */
+    /* color: #555; */
+}
+
+.details p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.details i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #6366f1; /* Icon color matching button color */
+}
+
+.contact-form {
+    padding: 40px;
+    width: 60%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.contact-form .col {
+    width: 48%;
+}
+
+.contact-form .col #firstName {
+    margin-right: 2px;
+}
+.contact-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-btn {
+    background-color: #6366f1;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4f50d4;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the contact info and form vertically */
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%; /* Make both sections take full width on smaller screens */
+    }
+
+    .contact-info {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .contact-form {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .contact-form .row {
+        flex-direction: column; /* Stack the first name and last name fields vertically */
+    }
+
+    .contact-form .col {
+        width: 100%; /* Full width for inputs */
+    }
+
+    .contact-btn {
+        width: 100%; /* Make the submit button full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Further reduce padding on very small screens */
+    }
+
+    .contact-info h2 {
+        font-size: 20px; /* Adjust font size for small screens */
+    }
+
+    .contact-info p {
+        font-size: 12px; /* Adjust paragraph font size */
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px; /* Adjust form font size */
+    }
+
+    .contact-btn {
+        padding: 10px 15px; /* Adjust button size */
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+.details p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.details i {
+    width: 20px; /* Set a fixed width to align the icons */
+    font-size: 18px;
+    margin-right: 10px;
+    color: #6366f1;
+    text-align: center; /* Center the icons horizontally */
 }
